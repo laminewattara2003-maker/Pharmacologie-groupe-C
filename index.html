@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Pharmacologie - INFAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loading-screen" class="center">
+    <div class="box">
+        <h3>Vérification de votre statut en cours...</h3>
+        <p>Veuillez patienter.</p>
+    </div>
+</div>
+
+<div id="login" class="center" style="display: none;">
+    <div class="box">
+        <h2>Sujet de Pharmacologie<br><small>Licence 1 INFAS Man</small></h2>
+        <div id="count-students-login" class="badge-users">👥 Chargement des participants...</div>
+        <input id="name" placeholder="Nom complet de l'étudiant">
+        <button onclick="start()">Commencer l'examen</button>
+    </div>
+</div>
+
+<div id="quiz" class="center">
+    <div class="box">
+        <div class="top">
+            <div id="student"></div>
+            <div style="text-align: right; font-size: 13px;">
+                <span id="global-timer" style="color: #7f8c8d; margin-right: 10px;">⏱ Global : 20:00</span>
+                <span id="question-timer" style="color: #e74c3c; font-weight: bold; font-size: 15px;">⏳ Question : 30s</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="bar" id="bar"></div>
+        </div>
+        <div id="quiz-type" class="badge"></div>
+        <h3 id="question"></h3>
+        <div id="options"></div>
+        <button id="btn-validate" onclick="validateQCM()">Valider la sélection</button>
+    </div>
+</div>
+
+<div id="result-screen" class="center" style="display: none;">
+    <div class="box" style="max-width: 700px;">
+        <div id="already-done-msg" class="info-blocage" style="display: none;">
+            ⚠️ Vous avez déjà soumis votre copie. Voici vos résultats :
+        </div>
+        <h2>Fin de l'évaluation !</h2>
+        <p id="result-welcome-msg"></p>
+        
+        <h3 style="margin-top: 30px; border-bottom: 2px solid #dfe6ee; padding-bottom: 10px;">📋 Grille de Correction</h3>
+        <div id="correction-box" style="text-align: left; max-height: 300px; overflow-y: auto; margin-bottom: 20px; padding: 10px; background: #f9f9f9; border-radius: 8px;"></div>
+        
+        <h3 style="margin-top: 30px; border-bottom: 2px solid #dfe6ee; padding-bottom: 10px;">🏆 Classement Général</h3>
+        <div id="ranking-table-container">Chargement du classement...</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

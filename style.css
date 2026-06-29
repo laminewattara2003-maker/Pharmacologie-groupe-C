@@ -1,0 +1,20 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #e9eef5; color: #1f2d3d; }
+.center { min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; }
+.box { background: #fff; padding: 25px; width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,.1); text-align: center; }
+input, button { width: 100%; padding: 12px; margin-top: 10px; box-sizing: border-box; }
+button { background: #2d7ff9; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+#quiz { display: none; padding: 20px; }
+.top { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 10px; font-size: 14px; }
+.progress { height: 8px; background: #dfe6ee; border-radius: 10px; overflow: hidden; margin-bottom: 15px; }
+.bar { height: 100%; width: 0%; background: #2d7ff9; }
+.option { display: block; width: 100%; margin: 8px 0; padding: 12px; background: #fff; border: 1px solid #d0d7e2; border-radius: 8px; cursor: pointer; text-align: left; font-weight: bold; color: #000; transition: background 0.2s; }
+.selected-opt { background: #34495e !important; color: #fff !important; border-color: #2c3e50; }
+.correct { background: #2ecc71 !important; color: #fff !important; }
+.wrong { background: #e74c3c !important; color: #fff !important; }
+.badge { display: inline-block; padding: 4px 8px; background: #e67e22; color: white; border-radius: 4px; font-size: 12px; margin-bottom: 10px; }
+.badge-users { background: #16a085; color: white; padding: 6px 12px; border-radius: 20px; font-size: 13px; display: inline-block; margin-bottom: 15px; font-weight: bold; }
+#btn-validate { background: #27ae60; display: none; margin-top: 15px; }
+.rank-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+.rank-table th, .rank-table td { padding: 10px; border: 1px solid #dfe6ee; text-align: center; }
+.rank-table th { background: #8e44ad; color: white; }
+.info-blocage { background: #f8d7da; color: #721c24; padding: 15px; border-radius: 8px; border: 1px solid #f5c6cb; margin-bottom: 20px; font-weight: bold; }
